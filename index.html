@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+		<link rel="stylesheet" href="./style.css" />
+		<script defer src="./script.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<button id="addBtn">Добавить</button>
+
+		<input type="text" id="searchInput" placeholder="Поиск..." />
+
+		<table>
+			<thead>
+				<tr>
+					<th>Имя</th>
+					<th>Дата</th>
+					<th>Числовое значение</th>
+					<th>Действия</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody"></tbody>
+		</table>
+
+		<dialog id="entryDialog">
+			<form id="entryForm" method="dialog">
+				<h3 id="dialogTitle">Добавить запись</h3>
+
+				<label for="name">Имя:</label>
+				<input type="text" id="name" name="name" required />
+
+				<label for="date">Дата:</label>
+				<input type="date" id="date" name="date" required />
+
+				<label for="number">Числовое значение:</label>
+				<input type="number" id="number" name="number" required />
+
+				<input type="hidden" id="rowIndex" />
+				<div class="blockBtn">
+					<button type="submit">Подтвердить</button>
+					<button type="button" id="cancelBtn">Отмена</button>
+				</div>
+			</form>
+		</dialog>
+	</body>
+</html>

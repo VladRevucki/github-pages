@@ -1,0 +1,138 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f0f2f5;
+	padding: 15px;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+	padding: 12px;
+	background-color: #009688;
+	border: none;
+	transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"] {
+	color: #fff;
+	width: 50%;
+}
+
+button[type="submit"]:hover {
+	background-color: #00796b;
+}
+
+label {
+	margin-top: -10px;
+	font-weight: bold;
+	margin-bottom: -5px;
+}
+
+input {
+	padding: 10px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	font-size: 15px;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+	border-color: #009688;
+}
+
+dialog {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	width: 320px;
+	max-width: 400px;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+dialog::backdrop {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#addBtn {
+	padding: 12px 24px;
+	font-size: 16px;
+	background-color: #4caf50;
+	color: white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+
+#addBtn:hover {
+	background-color: #1d9f23;
+	transform: translateY(-2px);
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+th {
+	background-color: #009688;
+	color: white;
+	padding: 14px;
+	text-align: left;
+}
+
+td {
+	font-size: 15px;
+	padding: 14px;
+	border-bottom: 1px solid #eee;
+}
+
+.action-btn {
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 25px;
+	transition: all 0.3s ease-in-out;
+}
+
+.action-btn:hover {
+	color: #00796b;
+	transform: scale(1.2);
+}
+
+#entryForm {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+#dialogTitle {
+	text-align: center;
+}
+
+.blockBtn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+#cancelBtn {
+	width: 50%;
+	color: #fff;
+	background-color: #ea4141;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+#cancelBtn:hover {
+	background-color: #bdbdbd;
+}
